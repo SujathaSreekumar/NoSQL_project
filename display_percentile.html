@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Percentile Result</title>
+        <link rel="stylesheet" href='/static/css/styles.css?ver=1.1'>
+
+    </head>
+    <body>
+        <h1>Percentile of Student </h1>
+        <br><br><br>
+
+        <table>
+            <tr>
+                <th>Name. . . . .</th>
+                <th>Roll No. . . . .</th>
+                <th>Total Marks (500). . . . .</th>
+                <th>Percentile</th>
+                
+            </tr><br>
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ roll }}</td>
+                <td>{{ target_total_marks }}</td>
+                <td>{{ percentile }}</td>
+            </tr>
+        </table>
+
+       
+
+        <br><br>
+        <a href="/percentile_marks" style="text-decoration: none; font-weight: bold;">Go Back</a>
+        <br>
+    </body>
+</html>

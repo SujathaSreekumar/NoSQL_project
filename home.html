@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Website</title>
+  <link rel="stylesheet" href='/static/css/styles.css?ver=1.1'>
+</head>
+<body>
+  <div class="banner">
+    <h1>River Valley Secondary School</h1>
+  </div>
+
+  <div class="container">
+    <!-- Add your website content here -->
+    <h2 class="logo">Student Management System</h2>
+    <strong>
+        <nav>
+            <ul class="menu">
+                <li><a href="{{url_for('display_students')}}">Display Student List</a></li><br>
+                <li><a href="{{url_for('add_marks')}}">Add Student Marks</a></li><br>
+                <li><a href="{{url_for('edit_marks')}}">Update Student Marks</a></li><br>
+                <li><a href="{{url_for('percentage_marks')}}">Find Total Percentage of Student</a></li><br>
+                <li><a href ="{{url_for('percentile_marks')}}">Find Percentile of Student</a></li><br>
+                <li><a href="{{url_for('class_topper')}}">Topper of the Class</a></li><br>
+                <li><a href="{{url_for('delete_student')}}">Delete Student Record</a></li><br>
+            
+            </ul>
+
+        </nav>
+    </strong>
+  </div>
+</body>
+</html>

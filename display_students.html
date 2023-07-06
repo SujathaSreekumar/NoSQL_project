@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Student Marks</title>
+        <link rel="stylesheet" href='/static/css/styles.css?ver=1.1'>
+    </head>
+
+    <body>
+        <h1>Student List</h1>
+        <br><br>
+        <table>
+            <tr>
+                <th>Name. . . . . . . . .</th>
+                <th>Roll No. . . . . . . . .</th>
+                <th>Gender. . . . . . . . .</th>
+                <th>Maths(100). . . . . . . . .</th>
+                <th>English(100). . . . . . . . .</th>
+                <th>Physics(100). . . . . . . . .</th>
+                <th>Chemistry(100). . . . . . . . .</th>
+                <th>Biology(100)</th>
+                
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td>{{ record.name }}</td>
+                <td>{{ record.roll }}</td>
+                <td>{{ record.gender }}</td>
+                <td>{{ record.maths }}</td>
+                <td>{{ record.english }}</td>
+                <td>{{ record.physics }}</td>
+                <td>{{ record.chemistry }}</td>
+                <td>{{ record.biology }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+
+
+
+
+        <br><br>
+        <a href="/" style="text-decoration: none; font-weight: bold;">Go to HomePage</a>
+        <br><br><br><br>
+    </body>
+</html>
