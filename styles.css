@@ -1,0 +1,34 @@
+/* Reset default browser styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font */
+body {
+  background-color: #c2f2f6; /* pastel background color */
+  font-family: Arial, sans-serif;
+}
+
+/* School banner styles */
+.banner {
+  background-color: #320e8c; /* banner background color */
+  color: #ffffff; /* banner text color */
+  padding: 10px;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Content container styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add your additional styles and customizations below this line */
